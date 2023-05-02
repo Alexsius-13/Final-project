@@ -1,0 +1,735 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.topheader {
+    display: flex;
+    width: 100%;
+    height:80px;
+    margin-top: 35px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.plane {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 13%;
+    height:50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.flight {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    height: 17px;
+}
+.car { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 15%;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.logo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.putinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 25%;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.log {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    height: 20px;
+    color: black;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    border-right: 2px solid gray;
+    width: 30%;
+}
+.john {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.imagesheader {
+    width: 100%;
+    display: flex;
+    height: 190px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .img1 {
+        width: 85%;
+        margin-right: 25px;
+    }
+    .img {
+        width: 85%;
+        margin-right: 15px;
+    }
+    .lupa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        gap: 4px;
+        height: 56px;
+        background: #8DD3BB;
+        border-radius: 4px;
+        border: none;
+    }
+}
+
+.filters-and-trip-info{
+    width: 90%;
+    display: flex;
+    gap: 50px;
+    .filters{
+        width: 30%;
+        border-right: 1px solid rgba(17, 34, 17, 0.3);
+        height: 100%;
+        padding-right: 30px;
+        
+        .price-range-section, .departure-time-range-section,
+        .trips-section, .airlines-section,
+        .rating-section{
+            padding: 20px 0 20px 0;
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #112211;
+            }
+            .buttonparent {
+                display: flex;
+                justify-content: space-between;
+            }
+            .rateBtn {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 16px;
+                border: 1px solid #8DD3BB;
+                border-radius: 4px;
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+        }
+
+        .price-range-section, .departure-time-range-section,
+        .airlines-section,
+        .rating-section{
+            border-bottom: 1px solid rgba(17, 34, 17, 0.3);
+        }
+        
+        .trips-section, .airlines-section{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .price-range-section, .departure-time-range-section{
+            position: relative;
+            input{
+                width: 100%;
+                height: 1px;
+                position: relative;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: rgba(0, 0, 255, 0.818);
+                    border-radius: 200px;
+                    position: absolute;
+                    top: -7px;
+                }
+
+            }
+            p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: #112211;
+            }
+            .end-price, .end-time{
+                position: absolute;
+                right: 0;
+                top: 55%;
+            }
+            
+        }
+    }
+
+    .trip-info{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        .sorting-section{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+            border-radius: 12px;
+            padding: 16px 24px;
+            gap: 24px;
+            div{
+                margin: 20px 0 20px 0;
+                width: 20%;
+                height: 100%;
+                padding-left: 5%;
+            }
+            div:not(:last-child) {
+                border-right: 1px solid #D7E2EE;
+            }
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #112211;
+            }
+            p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #112211;
+                opacity: 0.4;
+            }
+        }
+
+        .numbers-and-suggestions{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #112211;
+            }
+            .numbers{
+                span{
+                    color: #FF8682;
+                }
+            }
+
+            .suggestions{
+                font-weight: lighter;
+                span{
+                    font-weight: bolder;
+                }
+                select{
+                    border: none;
+                    background: none;
+                    outline: none;
+                    font-weight: bolder;
+                }
+                
+            }
+        }
+    }
+
+    .trips-list-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .trip-card{
+            background: #FFFFFF;
+            padding: 20px 14px;
+            box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+            border-radius: 12px;
+            width: 100%;
+            height: 290px;
+            display: flex;
+            justify-content: space-between;
+            .imgemirate {
+                height: 100%;
+                width: 30%;
+            }
+            .subtrip {
+                width: 70%;
+                height: 100%;
+                .middletrip {
+                    height: 100px;
+                    
+                    .emiratelabel{
+                        width: 100%;
+                        display: flex;
+                           
+                        .non {
+                            font-family: sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                           
+                            color: #112211;
+                            
+                            opacity: 0.78;
+                        }
+                        .time {
+                            font-family: sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #112211;
+                        }
+                    
+                        
+                        .pm {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 40%;
+                            height: 100%;
+                            margin-top: 15px;
+                            .subpm{
+                                display: flex;
+                                flex-direction: column;
+                                .time {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #112211;
+                                }
+                                .subplace {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                            
+                                    color: #112211;
+                                    
+                                    opacity: 0.4;
+                                }
+                            }
+                        }
+                        .min {
+                            display: flex;
+                            width: 50%;
+                            justify-content: space-evenly;
+                            margin-top: 15px;
+                          .subpm{ 
+                            .time {
+                                font-family: sans-serif;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #112211;
+                            }
+                            .subplace {
+                                font-family: sans-serif;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                        
+                                color: #112211;
+                                
+                                opacity: 0.4;
+                            }
+                        }  
+                        }
+                    }
+                    .space{
+                        height: 1px;
+                        background: #112211;
+                        opacity: 0.25;
+                        width: 100%;
+                        border-radius: 5px;
+                        margin-top: 30px;
+                    }
+                    .emiratelabel2{
+                        width: 100%;
+                        display: flex;
+                        .time {
+                            font-family: sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #112211;
+                        }
+                        .pm {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 40%;
+                            height: 100%;
+                            margin-top: 15px;
+                            .subpm{
+                                display: flex;
+                                flex-direction: column;
+                                .time {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #112211;
+                                }
+                                .subplace {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                            
+                                    color: #112211;
+                                    
+                                    opacity: 0.4;
+                                }
+                            }
+                        }
+                        .non {
+                            font-family: sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                           
+                            color: #112211;
+                            
+                            opacity: 0.78;
+                        }
+                        .min {
+                            display: flex;
+                            width: 50%;
+                            justify-content: space-evenly;
+                            margin-top: 15px;
+                            .subpm{ 
+                                .time {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #112211;
+                                }
+                                .subplace {
+                                    font-family: sans-serif;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                            
+                                    color: #112211;
+                                    
+                                    opacity: 0.4;
+                                }
+                            }  
+                                 
+                        }
+                    }
+                }
+                .bottomtrip {
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .guli {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 16px;
+                        gap: 4px;
+                        height: 48px;
+                        border: 1px solid #8DD3BB;
+                        border-radius: 4px;
+                    }  
+                    .details {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 16px;
+                        gap: 4px;
+                        width: 50%;
+                        height: 48px;
+                        background: #8DD3BB;
+                        font-family: sans-serif;
+                        border: none;
+                        width: 85%;
+                    }
+                    
+                }
+                .Toptrip{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .rateBtn {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 8px 16px;
+                    border: 1px solid #8DD3BB;
+                    border-radius: 4px;
+                    width: 5%;
+                    height: 30px;
+                    margin-top: 15px;
+                }
+                .toptripfirst {
+                    display: flex;
+                    justify-content: space-evenly;
+                    .reviews {
+                        color: rgba(16, 15, 15, 0.777)
+                    }
+                }
+            }   
+            .toptripsecond {
+                .start {
+                    font-family: sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 15px;
+                    color: #112211;
+                    opacity: 0.75;
+                }
+                .dollar {
+                    font-family: sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #FF8682;
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.subfooter {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.subscribe {
+    font-family: 'TradeGothic LT Extended';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    width: 25%;
+    color: #112211;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.travel {
+    font-family: 'TradeGothic LT Extended';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #112211;
+    opacity: 0.8;
+}
+.inspired {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #112211;
+    opacity: 0.7;
+}
+.inputdiv {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.inpspace {
+    width:30px;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-align: left;
+    width: 80%;
+    height: 50px;
+}
+.btnsub {
+    background: #112211;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 4px;
+}
+.btnspan {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.footerback{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 380px;
+    justify-content: space-evenly; 
+    background: #CDEAE1;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px 24px;
+    gap: 180px;
+}
+.emoji {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.greenfooter{
+    height: 100%;
+    width: 100%;
+    background: #8DD3BB;
+    margin-top: -150px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.greensection {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    margin-top: -166px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footertext {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 45px;
+}
+.Globaltexts {
+    font-family: 'TradeGothic LT Extended';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #112211;
+}
+.gray {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #112211;
+    opacity: 0.7;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.gray1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #112211;
+    opacity: 0.7;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.gray2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #112211;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}

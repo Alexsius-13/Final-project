@@ -1,0 +1,701 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.topheader {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-top: 35px;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.plane {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 13%;
+  height: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.flight {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  height: 17px;
+}
+
+.car {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 15%;
+  height: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logo {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.putinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 25%;
+  height: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.log {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  height: 20px;
+  color: black;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  border-right: 2px solid gray;
+  width: 30%;
+}
+
+.john {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.imagesheader {
+  width: 100%;
+  display: flex;
+  height: 190px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 16px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imagesheader .img1 {
+  width: 85%;
+  margin-right: 25px;
+}
+.imagesheader .img {
+  width: 85%;
+  margin-right: 15px;
+}
+.imagesheader .lupa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  height: 56px;
+  background: #8DD3BB;
+  border-radius: 4px;
+  border: none;
+}
+
+.filters-and-trip-info {
+  width: 90%;
+  display: flex;
+  gap: 50px;
+}
+.filters-and-trip-info .filters {
+  width: 30%;
+  border-right: 1px solid rgba(17, 34, 17, 0.3);
+  height: 100%;
+  padding-right: 30px;
+}
+.filters-and-trip-info .filters .price-range-section, .filters-and-trip-info .filters .departure-time-range-section,
+.filters-and-trip-info .filters .trips-section, .filters-and-trip-info .filters .airlines-section,
+.filters-and-trip-info .filters .rating-section {
+  padding: 20px 0 20px 0;
+}
+.filters-and-trip-info .filters .price-range-section h1, .filters-and-trip-info .filters .departure-time-range-section h1,
+.filters-and-trip-info .filters .trips-section h1, .filters-and-trip-info .filters .airlines-section h1,
+.filters-and-trip-info .filters .rating-section h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+.filters-and-trip-info .filters .price-range-section .buttonparent, .filters-and-trip-info .filters .departure-time-range-section .buttonparent,
+.filters-and-trip-info .filters .trips-section .buttonparent, .filters-and-trip-info .filters .airlines-section .buttonparent,
+.filters-and-trip-info .filters .rating-section .buttonparent {
+  display: flex;
+  justify-content: space-between;
+}
+.filters-and-trip-info .filters .price-range-section .rateBtn, .filters-and-trip-info .filters .departure-time-range-section .rateBtn,
+.filters-and-trip-info .filters .trips-section .rateBtn, .filters-and-trip-info .filters .airlines-section .rateBtn,
+.filters-and-trip-info .filters .rating-section .rateBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #8DD3BB;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.filters-and-trip-info .filters .price-range-section, .filters-and-trip-info .filters .departure-time-range-section,
+.filters-and-trip-info .filters .airlines-section,
+.filters-and-trip-info .filters .rating-section {
+  border-bottom: 1px solid rgba(17, 34, 17, 0.3);
+}
+.filters-and-trip-info .filters .trips-section, .filters-and-trip-info .filters .airlines-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.filters-and-trip-info .filters .price-range-section, .filters-and-trip-info .filters .departure-time-range-section {
+  position: relative;
+}
+.filters-and-trip-info .filters .price-range-section input, .filters-and-trip-info .filters .departure-time-range-section input {
+  width: 100%;
+  height: 1px;
+  position: relative;
+}
+.filters-and-trip-info .filters .price-range-section input::before, .filters-and-trip-info .filters .departure-time-range-section input::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 255, 0.818);
+  border-radius: 200px;
+  position: absolute;
+  top: -7px;
+}
+.filters-and-trip-info .filters .price-range-section p, .filters-and-trip-info .filters .departure-time-range-section p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #112211;
+}
+.filters-and-trip-info .filters .price-range-section .end-price, .filters-and-trip-info .filters .price-range-section .end-time, .filters-and-trip-info .filters .departure-time-range-section .end-price, .filters-and-trip-info .filters .departure-time-range-section .end-time {
+  position: absolute;
+  right: 0;
+  top: 55%;
+}
+.filters-and-trip-info .trip-info {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.filters-and-trip-info .trip-info .sorting-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 12px;
+  padding: 16px 24px;
+  gap: 24px;
+}
+.filters-and-trip-info .trip-info .sorting-section div {
+  margin: 20px 0 20px 0;
+  width: 20%;
+  height: 100%;
+  padding-left: 5%;
+}
+.filters-and-trip-info .trip-info .sorting-section .cheapest {
+  border-bottom: 4px solid #8DD3BB;
+  width: 30%;
+}
+.filters-and-trip-info .trip-info .sorting-section .best {
+  width: 30%;
+}
+.filters-and-trip-info .trip-info .sorting-section .quickest {
+  width: 30%;
+}
+.filters-and-trip-info .trip-info .sorting-section div:not(:last-child) {
+  border-right: 1px solid #D7E2EE;
+}
+.filters-and-trip-info .trip-info .sorting-section h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+.filters-and-trip-info .trip-info .sorting-section p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+  opacity: 0.4;
+}
+.filters-and-trip-info .trip-info .trips-section, .filters-and-trip-info .trip-info .airlines-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions .numbers span {
+  color: #FF8682;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions .suggestions {
+  font-weight: lighter;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions .suggestions span {
+  font-weight: bolder;
+}
+.filters-and-trip-info .trip-info .numbers-and-suggestions .suggestions select {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: bolder;
+}
+.filters-and-trip-info .trips-section .twentyfour {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF8682;
+}
+.filters-and-trip-info .trips-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filters-and-trip-info .trips-list-section .resultfooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  background: #112211;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+.filters-and-trip-info .trips-list-section .resultfooter .results {
+  background: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+.filters-and-trip-info .trips-list-section .trip-card {
+  background: #FFFFFF;
+  padding: 20px 14px;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 12px;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  justify-content: space-between;
+}
+.filters-and-trip-info .trips-list-section .trip-card .firstparent {
+  width: 45%;
+  height: 100%;
+}
+.filters-and-trip-info .trips-list-section .trip-card .firstparent .img1 {
+  width: 90%;
+  height: 100%;
+}
+.filters-and-trip-info .trips-list-section .trip-card .secondparent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.filters-and-trip-info .trips-list-section .trip-card .toptripsection {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+  gap: 10px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 15px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .cvk {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #112211;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .map {
+  display: flex;
+  justify-content: space-between;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .map .Gu {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #112211;
+  opacity: 0.75;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother {
+  display: flex;
+  justify-content: space-between;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .starimage {
+  display: flex;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .starimage .star {
+  margin-right: 5px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .bunkeri {
+  display: flex;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .bunkeri .bun {
+  margin-right: 5px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .bunkeri .num {
+  margin-right: 5px;
+  font-weight: bolder;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .imagemother .bunkeri .aminites {
+  margin-left: 5px;
+  font-family: sans-serif;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .btnparent {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .btnparent .btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  border: 1px solid #8DD3BB;
+  border-radius: 4px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripleft .btnparent .very {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripright {
+  display: flex;
+  flex-direction: column;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripright .start {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #112211;
+  opacity: 0.75;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripright .dollar {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #FF8682;
+}
+.filters-and-trip-info .trips-list-section .trip-card .subtripright .tax {
+  display: flex;
+  justify-content: flex-end;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #112211;
+  opacity: 0.75;
+}
+.filters-and-trip-info .trips-list-section .trip-card .line {
+  height: 1px;
+  width: 100%;
+  background: #112211;
+  margin-top: 15px;
+}
+.filters-and-trip-info .trips-list-section .trip-card .bottomtrip {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.filters-and-trip-info .trips-list-section .trip-card .bottomtrip .lovebtn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  width: 20%;
+  border: 1px solid #8DD3BB;
+  border-radius: 4px;
+  width: 10%;
+}
+.filters-and-trip-info .trips-list-section .trip-card .bottomtrip .place {
+  width: 100%;
+}
+.filters-and-trip-info .trips-list-section .trip-card .bottomtrip .view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  width: 100%;
+  background: #8DD3BB;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subfooter {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.subscribe {
+  font-family: "TradeGothic LT Extended";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  width: 25%;
+  color: #112211;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.travel {
+  font-family: "TradeGothic LT Extended";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #112211;
+  opacity: 0.8;
+}
+
+.inspired {
+  font-family: "Montserrat";
+  font-style: normal;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+  opacity: 0.7;
+}
+
+.inputdiv {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inpspace {
+  width: 30px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3px;
+  gap: 10px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  text-align: left;
+  width: 80%;
+  height: 50px;
+  border: none;
+}
+
+.btnsub {
+  background: #112211;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+}
+
+.btnspan {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.footerback {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: 380px;
+  justify-content: space-evenly;
+  background: #CDEAE1;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px 24px;
+  gap: 180px;
+}
+
+.emoji {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.greenfooter {
+  height: 100%;
+  width: 100%;
+  background: #8DD3BB;
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.greensection {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footertext {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.Globaltexts {
+  font-family: "TradeGothic LT Extended";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+
+.gray {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+  opacity: 0.7;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.gray1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+  opacity: 0.7;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.gray2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #112211;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=listing.css.map */
